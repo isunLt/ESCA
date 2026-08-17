@@ -102,7 +102,7 @@ def main():
         else:
             raise Exception(f"Dataset not recognized: {args.dataset}")
     elif args.cfg_file is None:
-        args.cfg_file = "config/slidr_minkunet_sweeps_find.yaml"
+        args.cfg_file = "config/sweeps_explore.yaml"
 
     config = generate_config(args.cfg_file)
     if args.resume_path:

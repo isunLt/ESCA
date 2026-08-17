@@ -576,6 +576,8 @@ class NuScenesSweepsFindMatchDataset(Dataset):
 
 def make_data_loader(config, phase, num_threads=0):
     # instantiate the dataset
+    assert config['batch_size'] == 1, "Batch size must be 1 for sweeps find dataset"
+    assert config['num_gpus'] == 1, "Number of GPUs must be 1 for sweeps find dataset"
     dset = NuScenesSweepsFindMatchDataset(phase=phase, config=config)
     collate_fn = minkunet_collate_pair_fn_sweeps_find
     batch_size = config["batch_size"] // config["num_gpus"]
