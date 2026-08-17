@@ -1,5 +1,7 @@
+debug: False
+seed: 123
 dataset : "waymo"
-working_dir : "output/eccv/semseg/semantic_waymo_spvcnn/"
+working_dir : "output/semseg/semantic_waymo_spvcnn/"
 model_points: 'spvcnn'
 cr: 1.0
 # if set to True, use cylindrical coordinates, otherwise use cartesian

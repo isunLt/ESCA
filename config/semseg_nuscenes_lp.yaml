@@ -1,3 +1,5 @@
+debug: False
+seed: 123
 dataset : "nuscenes"
 #working_dir : "output/semseg/nuscenes/"
 #working_dir : "output/seal_re_imp/semseg/nuscenes/"

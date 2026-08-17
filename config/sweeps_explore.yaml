@@ -56,10 +56,8 @@ superpixel_size : 150
 ignored_label: -1
 
 dataset_skip_step : 1
-#sweeps_superpixels_path : '/data2/share/sweep_pairs'
 sweeps_pair_list_path : '/data2/stf/sweeps_pairs_filtered_by_mean.pkl'
-sweeps_skip_step: 5
-#sweeps_pair_exclude_path : '/data2/share/sweeps_less_than_1024.npy'
+# sweeps_skip_step: 5
 # path to weights to continue a previous training
 resume_path : Null
 

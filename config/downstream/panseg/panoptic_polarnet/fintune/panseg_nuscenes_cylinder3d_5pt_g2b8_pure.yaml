@@ -1,3 +1,4 @@
+debug: False
 seed: 123
 dataset: "nuscenes"
 working_dir: "output/panseg/nuscenes/5pt/finetune/cylinder3d_pure/g2b16"

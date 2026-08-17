@@ -1,6 +1,8 @@
+debug: False
+seed: 123
 dataset : "synth4d"
 sensor: 'hdl32e'
-working_dir : "output/eccv/semseg/synth4d_nusc_spvcnn/"
+working_dir : "output/semseg/synth4d_nusc_spvcnn/"
 model_points: 'spvcnn'
 cr: 1.0
 # if set to True, use cylindrical coordinates, otherwise use cartesian

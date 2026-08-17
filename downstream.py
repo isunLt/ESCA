@@ -15,12 +15,8 @@ from downstream.lightning_trainer import LightningDownstream
 from downstream.lightning_datamodule import DownstreamDataModule
 from downstream.dataloader_kitti import make_data_loader as make_data_loader_kitti
 from downstream.dataloader_nuscenes import make_data_loader as make_data_loader_nuscenes
-from downstream.dataloader_waymo import make_data_loader as make_data_loader_waymo
-from downstream.dataloader_synth4d import make_data_loader as make_data_loader_synth4d
-from downstream.dataloader_semanticposs import make_data_loader as make_data_loader_semanticposs
-from downstream.dataloader_semanticstf import make_data_loader as make_data_loader_semanticstf
-from downstream.dataloader_rellis3D import make_data_loader as make_data_loader_rellis3d
-from downstream.dataloader_synlidar import make_data_loader as make_data_loader_synlidar
+# from downstream.dataloader_waymo import make_data_loader as make_data_loader_waymo
+# from downstream.dataloader_synth4d import make_data_loader as make_data_loader_synth4d
 
 def main():
     """

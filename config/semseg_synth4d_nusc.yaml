@@ -1,6 +1,8 @@
+debug: False
+seed: 123
 dataset : "synth4d"
 sensor: 'hdl32e'
-working_dir : "output/eccv/semseg/synth4d_nusc/"
+working_dir : "output/semseg/synth4d_nusc/"
 model_points: 'minkunet'
 # if set to True, use cylindrical coordinates, otherwise use cartesian
 cylindrical_coordinates : True

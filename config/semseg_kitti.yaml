@@ -1,11 +1,7 @@
+debug: False
 seed: 123
 dataset : "kitti"
-#working_dir : "output/semseg/semantic_kitti/"
-#working_dir : "output/eccv/rebuttal/semseg/semantic_kitti/"
-#working_dir : "output/tpami/semseg/semantic_kitti_concat/"
-#working_dir : "output/tpami/semseg_dinov2_png/semantic_kitti/"
-working_dir : "output/tpami/concat_dinov2_png/semantic_kitti/"
-#working_dir : "output/eccv/rebuttal/semseg/scribble_kitti/"
+working_dir : "output/semseg/semantic_kitti_minkunet/"
 model_points: 'minkunet'
 # if set to True, use cylindrical coordinates, otherwise use cartesian
 cylindrical_coordinates : True

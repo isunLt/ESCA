@@ -1,5 +1,7 @@
+debug: False
+seed: 123
 dataset : "kitti"
-working_dir : "output/eccv/rebuttal/semseg/semantic_kitti_spvcnn/"
+working_dir : "output/semseg/semantic_kitti_spvcnn/"
 model_points: 'spvcnn'
 cr: 1.0
 # if set to True, use cylindrical coordinates, otherwise use cartesian
@@ -40,6 +42,8 @@ pretraining_path : Null
 resume_path : Null
 # Where to log results for evaluate
 log_evaluate : Null
+
+
 
 # WARNING: DO NOT CHANGE THE FOLLOWING PARAMETERS
 # ===============================================

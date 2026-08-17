@@ -1,3 +1,5 @@
+debug: False
+seed: 123
 dataset : "synth4d"
 sensor: 'hdl64e'
 working_dir : "output/eccv/semseg/synth4d_kitti/"

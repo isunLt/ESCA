@@ -340,11 +340,11 @@ class NuScenesSweepsFindMatchDataset(Dataset):
             im = np.array(Image.open(os.path.join(self.nusc.dataroot, cam["filename"])))
             # im = np.zeros(shape=(900, 1600, 3), dtype=np.uint8)
             if pointsensor['is_key_frame']:
-                sp_path = os.path.join(self.superpixels_path, 'keyframes', str(cam['token']) + '_dino_mask.bin')
+                sp_path = os.path.join(self.superpixels_path, 'keyframes', str(cam['token']) + '.png')
             else:
-                sp_path = os.path.join(self.superpixels_path, 'sweeps', str(cam['token']) + '_dino_mask.bin')
+                sp_path = os.path.join(self.superpixels_path, 'sweeps', str(cam['token']) + '.png')
 
-            sp = np.fromfile(sp_path, dtype=np.uint8).reshape(900, 1600).astype(np.int32)
+            sp = np.array(Image.open(sp_path))
             v_m = (sp != 0)
             superpixels.append(sp)
 
